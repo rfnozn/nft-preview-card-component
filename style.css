@@ -61,7 +61,14 @@ body {
 .content__title {
   font-size: 1.375rem;
   font-weight: var(--fw-semi-bold);
-  line-height: auto;
+  line-height: 1;
+  a {
+    text-decoration: none;
+    color: var(--white);
+    &:hover {
+    color: var(--cyan);
+    }
+  }
 }
 
 .content__text {
@@ -87,12 +94,12 @@ body {
 .states__eth {
   color: var(--cyan);
   font-weight: var(--fw-semi-bold);
-  line-height: auto;
+  line-height: 1;
 }
 
 .states__days-left {
   color: var(--soft-blue);
-  line-height: auto;
+  line-height: 1;
 }
 
 .card__line {
@@ -112,8 +119,15 @@ body {
 }
 
 .info__author {
-  line-height: auto;
+  line-height: 1;
   span {
     color: var(--soft-blue);
+  }
+  a {
+    text-decoration: none;
+    color: var(--white);
+    &:hover {
+      color: var(--cyan);
+    }
   }
 }
